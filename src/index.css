@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@theme {
+  --color-brand-bg: #FCFCFC;
+  --color-brand-primary: #9D7166;
+  --color-brand-secondary: #D2C0B6;
+  --color-brand-accent: #AD947E;
+  --color-brand-warm: hsl(25, 30%, 60%);
+  --color-brand-text: hsl(20, 10%, 20%);
+  --color-brand-text-muted: hsl(20, 10%, 45%);
+  --color-brand-border: hsl(25, 20%, 88%);
+  --color-brand-card: #FFFFFF;
+  
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  @keyframes shimmer {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }
+}
+
+:root {
+  --bg: #FCFCFC;
+  --primary: #9D7166;
+  --secondary: #D2C0B6;
+  --accent: #AD947E;
+  --warm: hsl(25, 30%, 60%);
+  --text: hsl(20, 10%, 20%);
+  --muted: hsl(20, 10%, 45%);
+  --border: hsl(25, 20%, 88%);
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+  letter-spacing: -0.3px;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+button {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(157, 113, 102, 0.3);
+  cursor: pointer;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
